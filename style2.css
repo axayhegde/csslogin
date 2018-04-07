@@ -47,18 +47,21 @@ body{
     height: 30px;
     color: #fff;
 }
+font-face { font-family: myFont; src: url('Halo.ttf'); }
 .logo input[type="submit"]
 {
     border: none;
     outline: none;
     height: 40px;
-    color: #761c19;
-    font-size: 16px;
-    background-color: #f52887;
-    border-radius: 20px;
+    color: red;
+    font-size: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    font-family: myFont,Verdana;
 }
 .logo input[type="submit"]:hover{
-    background: #333;
+    background: #ffffff;
+    font-family: myFont,Verdana;
 }
 .logo a{
     color: #fff;
