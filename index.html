@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HALO</title>
-    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <meta property="og:url" content="www.akshayhegde.in"/>
     <meta property="og:type" content="article"/>
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+<div id="container"></div>
 <div class="logo">
     <img src="logo.jpeg" class="user">
     <p>Email</p>
@@ -51,3 +51,14 @@
 
 
 </style>
+<script src="starfield.js"></script>
+<script>
+    //  Get the container and turn it into a starfield.
+    var container = document.getElementById('container');
+    var starfield = new Starfield();
+    starfield.initialise(container);
+    starfield.stars = 200;      //  The number of stars.
+    starfield.minVelocity = 50;  //  The minimum star velocity in pixels per second.
+    starfield.maxVelocity = 100; //  The maximum star velocity in pixels per second.
+    starfield.start();
+</script>
